@@ -4,8 +4,8 @@
 
 ### Links and Resources
 
-- [submission PR](http://xyz.com)
-- [ci/cd](https://github.com/401-advanced-javascript-qusaiAlhanaktah/data-structures-and-algorithms/commit/81459a8bebcb9de0734dc9eddfcc4c39b602f77c/checks?check_suite_id=410835633) (GitHub Actions)
+- [submission PR](https://github.com/401-advanced-javascript-qusaiAlhanaktah/data-structures-and-algorithms/pull/3)
+- [ci/cd](https://github.com/401-advanced-javascript-qusaiAlhanaktah/data-structures-and-algorithms/commit/3b5c331fd7dc622e828f495796d14080c24535b0/checks?check_suite_id=414498377) (GitHub Actions)
 
 
 ### Setup
