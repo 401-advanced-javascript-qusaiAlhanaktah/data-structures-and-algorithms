@@ -7,7 +7,7 @@ class LinkedList{
         this.head = null;
     }
 
-    append (value){
+    insert (value){
         let node = new Node(value);
         if(!this.head){
             this.head = node;
@@ -20,9 +20,5 @@ class LinkedList{
         return this;
     }
 }
-class insert extends LinkedList{
-constructor(){
-    super();
-}
-}
-module.exports = insert;
+
+module.exports = LinkedList;

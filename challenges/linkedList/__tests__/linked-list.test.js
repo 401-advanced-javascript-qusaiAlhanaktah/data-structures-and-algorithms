@@ -17,7 +17,9 @@ describe('linked-list Module',()=>{
         let value = 'Test Node';
         let linkList = new LinkedList(value);
         console.log(linkList)
-        expect(linkList.value).toEqual(value);
-        expect(linkList.next).toBeNull();
+        console.log(linkList.insert(value))
+        let headList = linkList.insert(value)
+        expect(headList.head.Node.value).toEqual(value);
+        // expect(linkList.next).toBeNull();
     })
 })
