@@ -5,7 +5,7 @@ const LinkedList = require('../lib/linked-list.js');
 
 describe('Node Module',()=>{
     it('cheak node',()=>{
-        let value = 'Test Node';
+        let value = 'Test1 Node';
         let node = new Node(value);
         expect(node.value).toEqual(value);
         expect(node.next).toBeNull();
@@ -13,13 +13,35 @@ describe('Node Module',()=>{
 });
 
 describe('linked-list Module',()=>{
-    it('cheak head',()=>{
-        let value = 'Test Node';
-        let linkList = new LinkedList(value);
+    it('insert() method',()=>{
+        let value = 'Test2 Node';
+        let linkList = new LinkedList;
+        linkList.insert(value)
         console.log(linkList)
-        console.log(linkList.insert(value))
-        let headList = linkList.insert(value)
-        expect(headList.head.Node.value).toEqual(value);
-        // expect(linkList.next).toBeNull();
+        expect(linkList.head.value).toEqual(value);
+        expect(linkList.head.next).toEqual(null);
     })
+    it('includes() method',()=>{
+        let linkList = new LinkedList;
+        let testArray = [ false, 'Test3 Node', 5];
+        testArray.forEach(item=>{
+           linkList.insert(item);      
+    });
+        testArray.forEach(element=>{
+            expect(linkList.includes(5)).toBeTruthy();
+            expect(linkList.includes('hello')).toBeFalsy();
+            expect(linkList.includes('Test3 Node')).toBeTruthy();
+      
+    });
 })
+    it('toString() method',()=>{
+        let linkList = new LinkedList;
+        let testArray = [ false, 'Test3 Node', 5,[]];
+        testArray.forEach(item=>{
+            linkList.insert(item);      
+     });
+    //  console.log(linkList.toString())
+     expect(linkList.toString()).toEqual('[object Object]')
+})
+});
+

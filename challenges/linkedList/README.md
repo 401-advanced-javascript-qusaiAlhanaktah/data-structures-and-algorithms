@@ -11,7 +11,7 @@ our approuch is very straight forward method of breaking the problem into a smal
 Big O (n)
 
 ## Solution
-- [whiteboard image](assets/IMG_20200121_012123.jpg)
+- [whiteboard image](assets/Linked-List1.jpg)
 
 ## worked as groups of four 
 Ahmad K. al-Mahasneh
