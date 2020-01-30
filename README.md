@@ -4,7 +4,7 @@
 
 ### Links and Resources
 
-- [submission PR](http://xyz.com)
+- [submission PR](https://github.com/401-advanced-javascript-qusaiAlhanaktah/data-structures-and-algorithms/pull/2)
 - [ci/cd](https://github.com/401-advanced-javascript-qusaiAlhanaktah/data-structures-and-algorithms/commit/81459a8bebcb9de0734dc9eddfcc4c39b602f77c/checks?check_suite_id=410835633) (GitHub Actions)
 
 

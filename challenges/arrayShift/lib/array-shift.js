@@ -18,4 +18,4 @@ insertShiftArr.insertShiftArray = (arr, val) => {
     }
   }
   return newArr;
-}
+};
