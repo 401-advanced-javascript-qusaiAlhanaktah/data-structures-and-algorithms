@@ -157,5 +157,45 @@ describe('linked-list-insertions Module',()=>{
   });
 
 });
-
-
+describe('linked-list-insertions Module',()=>{
+  it('Where k is greater than the length of the linked list',()=>{
+    let test = ['VALUE 1','VALUE 2','VALUE 3','VALUE 4','VALUE 5','VALUE 6','VALUE 7'];
+    let linkList = new LinkedList;
+    test.forEach(element=>{
+      linkList.append(element);
+    });
+    expect(linkList.llkthFromEnd(8)).toEqual('Exception');
+  });
+  it('Where k and the length of the list are the same',()=>{
+    let test = ['VALUE 1','VALUE 2','VALUE 3','VALUE 4','VALUE 5','VALUE 6','VALUE 7'];
+    let linkList = new LinkedList;
+    test.forEach(element=>{
+      linkList.append(element);
+    });
+    expect(linkList.llkthFromEnd(6)).toEqual('VALUE 1');
+  });
+  it('Where k is not a positive integer',()=>{
+    let test = ['VALUE 1','VALUE 2','VALUE 3','VALUE 4','VALUE 5','VALUE 6','VALUE 7'];
+    let linkList = new LinkedList;
+    test.forEach(element=>{
+      linkList.append(element);
+    });
+    expect(linkList.llkthFromEnd(-1)).toEqual('Exception');
+  });
+  it('Where the linked list is of a size 1',()=>{
+    let test = ['VALUE 1'];
+    let linkList = new LinkedList;
+    test.forEach(element=>{
+      linkList.append(element);
+    });
+    expect(linkList.llkthFromEnd(0)).toEqual('VALUE 1');
+  });
+  it('“Happy Path” where k is not at the end, but somewhere in the middle of the linked list',()=>{
+    let test = ['VALUE 1','VALUE 2','VALUE 3','VALUE 4','VALUE 5','VALUE 6','VALUE 7'];
+    let linkList = new LinkedList;
+    test.forEach(element=>{
+      linkList.append(element);
+    });
+    expect(linkList.llkthFromEnd(3)).toEqual('VALUE 4');
+  });
+});
