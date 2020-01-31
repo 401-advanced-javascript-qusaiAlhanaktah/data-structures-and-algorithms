@@ -13,20 +13,11 @@
  - Head is a Node
 our approuch is very straight forward method of breaking the problem into a smaller blocks, 
 ## Approach & Efficiency
-the append(), insertBefore() and insertAfter() methods are added to the class to append nodes, or adding them in a specific location. 
+the llkthFromEnd(), is a method built by using while loop, and if statements. to loop through the array in a reverse manner. 
 ### Big O
-   #### append():
-    time O (1)
-    space O (n)
-    no iteration is done is the Big O(1) is present.
-   
-   #### insertBefore():
-    time O (2)
-    space O (n)
-    higher order functions are used.
-   #### insertAfter():
+   #### llkthFromEnd():
    time O (2)
    space O (n)
    higher order functions are used.
 ## Solution
-- [whiteboard image](assets/Linked-List-insertions.jpg)
+- [whiteboard image](assets/linked-list-countBack.jpg)
