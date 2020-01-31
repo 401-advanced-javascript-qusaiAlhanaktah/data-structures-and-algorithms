@@ -84,4 +84,78 @@ describe('linked-list Module',()=>{
     expect(linkList.toString()).toEqual('[object Object]');
   });
 });
+describe('linked-list-insertions Module',()=>{
+  it('Can successfully add a node to the end of the linked list',()=>{
+    let test = 'VALUE 1';
+    let linkList = new LinkedList;
+    linkList.append(test);
+    expect(linkList.head.value).toEqual(test);
+    expect(linkList.head.next).toBeNull();
+  });
+  it('Can successfully add multiple nodes to the end of a linked list',()=>{
+    let test = ['VALUE 1','VALUE 2','VALUE 3','VALUE 4'];
+    let linkList = new LinkedList;
+    test.forEach(element=>{
+      linkList.append(element);
+    });
+    expect(linkList.head.value).toEqual(test[0]);
+    expect(linkList.head.next.value).toEqual(test[1]);
+    expect(linkList.head.next.next.value).toEqual(test[2]);
+    expect(linkList.head.next.next.next.value).toEqual(test[3]);
+    expect(linkList.head.next.next.next.next).toBeNull();
+  });
+  it('Can successfully insert a node before a node located i the middle of a linked list',()=>{
+    let test = ['VALUE 1','VALUE 2','VALUE 3'];
+    let linkList = new LinkedList;
+    test.forEach(element=>{
+      linkList.append(element);
+    });
+    linkList.insertBefore('VALUE 2','VALUE 4');
+    expect(linkList.head.value).toEqual(test[0]);
+    expect(linkList.head.next.value).toEqual('VALUE 4');
+    expect(linkList.head.next.next.value).toEqual(test[1]);
+    expect(linkList.head.next.next.next.value).toEqual(test[2]);
+    expect(linkList.head.next.next.next.next).toBeNull();
+  });
+  it('Can successfully insert a node before the first node of a linked list',()=>{
+    let test = ['VALUE 1','VALUE 2','VALUE 3'];
+    let linkList = new LinkedList;
+    test.forEach(element=>{
+      linkList.append(element);
+    });
+    linkList.insertBefore('VALUE 1','VALUE 4');
+    expect(linkList.head.value).toEqual('VALUE 1');
+    expect(linkList.head.next.value).toEqual(test[1]);
+    expect(linkList.head.next.next.value).toEqual(test[2]);
+    expect(linkList.head.next.next.next).toBeNull();
+  });
+  it('Can successfully insert after a node in the middle of the linked list',()=>{
+    let test = ['VALUE 1','VALUE 2','VALUE 3'];
+    let linkList = new LinkedList;
+    test.forEach(element=>{
+      linkList.append(element);
+    });
+    linkList.insertAfter('VALUE 2','VALUE 4');
+    expect(linkList.head.value).toEqual(test[0]);
+    expect(linkList.head.next.value).toEqual(test[1]);
+    expect(linkList.head.next.next.value).toEqual('VALUE 4');
+    expect(linkList.head.next.next.next.value).toEqual(test[2]);
+    expect(linkList.head.next.next.next.next).toBeNull();
+  });
+  it('Can successfully insert a node after the last node of the linked list',()=>{
+    let test = ['VALUE 1','VALUE 2','VALUE 3'];
+    let linkList = new LinkedList;
+    test.forEach(element=>{
+      linkList.append(element);
+    });
+    linkList.insertAfter('VALUE 3','VALUE 4');
+    expect(linkList.head.value).toEqual(test[0]);
+    expect(linkList.head.next.value).toEqual(test[1]);
+    expect(linkList.head.next.next.value).toEqual(test[2]);
+    expect(linkList.head.next.next.next.value).toEqual('VALUE 4');
+    expect(linkList.head.next.next.next.next).toBeNull();
+  });
+
+});
+
 
