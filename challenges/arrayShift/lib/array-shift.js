@@ -1,4 +1,4 @@
-'use strict';
+
 
 let insertShiftArr = module.exports = {};
 insertShiftArr.insertShiftArray = (arr, val) => {
@@ -18,4 +18,4 @@ insertShiftArr.insertShiftArray = (arr, val) => {
     }
   }
   return newArr;
-}
+};
