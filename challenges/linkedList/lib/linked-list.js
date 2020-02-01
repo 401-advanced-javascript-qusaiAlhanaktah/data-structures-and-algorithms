@@ -40,14 +40,12 @@ class LinkedList{
     let node = new Node(value);
     if(!this.head){
       this.head = node;
-      this.index = node.index++;
     }else{
       let currentNode = this.head;
       while(currentNode.next){
         currentNode = currentNode.next;
       }
       currentNode.next = new Node(value);
-      this.index = node.index++;
     }
     return this;
   }
@@ -89,17 +87,7 @@ class LinkedList{
     }
     return this;
   }
-  // kthFromEnd(k){
-  //   let currentNode = this.head;
-  //   // let afterNode = null;
-  //   while(currentNode){
-  //     if(this.index === k){
-  //       return currentNode.value;
-  //     }
-  //     currentNode = currentNode.next;
-  //   }
-  //   return this;
-  // }
+
   llkthFromEnd(k){
     let counter = this.head;
     let nodeContent = null;
@@ -125,6 +113,6 @@ class LinkedList{
     }
     return nodeContentExist ? nodeContent.value : 'Exception';
   }
-
 }
+
 module.exports = LinkedList;

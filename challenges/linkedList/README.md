@@ -13,11 +13,12 @@
  - Head is a Node
 our approuch is very straight forward method of breaking the problem into a smaller blocks, 
 ## Approach & Efficiency
-the llkthFromEnd(), is a method built by using while loop, and if statements. to loop through the array in a reverse manner. 
+the approach was eliminating the edge cases first, then checking for linked lists length then arrange then on alternating fashion.
+
 ### Big O
-   #### llkthFromEnd():
-   time O (2)
-   space O (n)
-   higher order functions are used.
+   #### mergeList()
+   time O (n)
+   space O (1)
+time is a big O(n), because there is a while loop that will loop through the linked list, but this while loop swap b
 ## Solution
-- [whiteboard image](assets/linked-list-countBack.jpg)
+- [whiteboard image](assets/ll-merge.jpg)
