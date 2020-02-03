@@ -1,6 +1,22 @@
-# Challenge Summary
+# Challenge Summary-06
+**a challenge for inserting nodes, in multiple places before and after a specific node at the end or the beginnin.**
+## Challenge Description
+_insert nodes at the end or before or after a specific node._
 
-**Insert item in array**
+## Approach & Efficiency
+**the append(), insertBefore() and insertAfter() methods are added to the class to append nodes, or adding them in a specific location.**
+
+### Big O
+#### time O (n) space O (n)
+## Solution
+- [whiteboard image](assets/Linked-List1.jpg)
+
+
+
+
+# Challenge Summary-07
+
+**a challenge for looping through the linked list in a reverse manner, get the correct values, and checks for abstract situations.**
 
 ## Challenge Description
 
