@@ -14,5 +14,13 @@ _this problem can be solved by create a class of Binary Tree and have a three me
    time O (n)
    space O (1)
 time is a big O(n), because there is a cyclic walk to check for each branch in the tree.
+  #### inOrder()
+   time O (n)
+   space O (1)
+time is a big O(n), because there is a cyclic walk to check for each branch in the tree.
+  #### postOrder()
+   time O (n)
+   space O (1)
+time is a big O(n), because there is a cyclic walk to check for each branch in the tree.
 ## Solution
 - [whiteboard image](assets/tree.jpg)
