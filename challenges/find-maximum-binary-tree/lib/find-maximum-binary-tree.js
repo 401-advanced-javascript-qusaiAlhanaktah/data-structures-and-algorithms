@@ -19,8 +19,13 @@ class BinaryTreeMaxValue {
       if (node.right) _trace(node.right);
     };
     _trace(this.root);
-    storage.sort((a,b)=>b > a);
-    return storage[0];
+    let max = 0;
+    for (let i = 0; i < storage.length; i++) {
+      if(storage[i] > max) max = storage[i];
+    }
+    // storage.sort((a,b)=>b > a);
+    // return storage[0];
+    return max;
   }
 }
 module.exports = {BinaryTreeMaxValue,Node};

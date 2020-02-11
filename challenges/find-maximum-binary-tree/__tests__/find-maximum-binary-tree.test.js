@@ -30,11 +30,11 @@ describe('Find Maximum Binary Tree Module', ()=>{
     tree3 = new findMaximumValue.BinaryTreeMaxValue(node3);
   });
   it('it should return the maximum value stored in the tree1 (9)', ()=>{
-    // console.log(tree3.findMaximumValue());
+    console.log(tree3.findMaximumValue());
     expect(tree3.findMaximumValue()).toEqual(9);
   });
   it('it should return the maximum value stored in the tree (11)', ()=>{
-    // console.log(tree2.findMaximumValue());
+    console.log(tree2.findMaximumValue());
     expect(tree2.findMaximumValue()).toEqual(11);
   });
 
