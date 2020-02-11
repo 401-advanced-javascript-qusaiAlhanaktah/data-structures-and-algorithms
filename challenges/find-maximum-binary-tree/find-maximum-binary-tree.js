@@ -22,7 +22,5 @@ class BinaryTreeMaxValue {
     storage.sort((a,b)=>b > a);
     return storage[0];
   }
-
 }
-
 module.exports = {BinaryTreeMaxValue,Node};
