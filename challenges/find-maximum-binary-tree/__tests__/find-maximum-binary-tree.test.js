@@ -1,7 +1,7 @@
 /* eslint-disable strict */
 'use strict';
 
-const findMaximumValue = require('../find-maximum-binary-tree.js');
+const findMaximumValue = require('../lib/find-maximum-binary-tree.js');
 
 describe('Find Maximum Binary Tree Module', ()=>{
   let tree2 = null;
