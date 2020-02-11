@@ -6,7 +6,7 @@ class Node {
   }
 }
 
-class BinaryTree {
+class BinaryTreeMaxValue {
   constructor(root = null){
     this.root = root;
   }
@@ -25,4 +25,4 @@ class BinaryTree {
 
 }
 
-module.exports = {BinaryTree,Node};
+module.exports = {BinaryTreeMaxValue,Node};

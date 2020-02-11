@@ -3,9 +3,9 @@
 
 const findMaximumValue = require('../find-maximum-binary-tree.js');
 
-describe('Breadth first Traversal Tree Module', ()=>{
-  let tree = null;
-  let tree1 = null;
+describe('Find Maximum Binary Tree Module', ()=>{
+  let tree2 = null;
+  let tree3 = null;
   beforeAll(()=>{
     let node1 = new findMaximumValue.Node(2);
     let node2 = new findMaximumValue.Node(7);
@@ -26,14 +26,16 @@ describe('Breadth first Traversal Tree Module', ()=>{
     node3.right = node6;
     node6.left = node9;
 
-    tree = new findMaximumValue.BinaryTree(node1);
-    tree1 = new findMaximumValue.BinaryTree(node3);
+    tree2 = new findMaximumValue.BinaryTreeMaxValue(node1);
+    tree3 = new findMaximumValue.BinaryTreeMaxValue(node3);
   });
   it('it should return the maximum value stored in the tree1 (9)', ()=>{
-    expect(tree1.findMaximumValue()).toEqual(9);
+    console.log(tree3.findMaximumValue());
+    expect(tree3.findMaximumValue()).toEqual(9);
   });
   it('it should return the maximum value stored in the tree (11)', ()=>{
-    expect(tree.findMaximumValue()).toEqual(11);
+    console.log(tree2.findMaximumValue());
+    expect(tree2.findMaximumValue()).toEqual(11);
   });
 
 });
