@@ -20,19 +20,9 @@ class LinkedList {
       this.head = node;
     }
   }
-  //   get(){
-  //     if (!this.head) return 'It is Empty';
-  //     else{
-  //       let current = this.head;
-  //       while(current){
-  //         current = current.next;
-  //       }
-
-//     }
-//   }
 }
 
-class Hashmap {
+class HashMap {
   constructor(size){
     this.size = size;
     this.storage = new Array(size);
@@ -55,24 +45,33 @@ class Hashmap {
     }
   }
   get(key){
-    let hashedKey = this.hash(key);
-    for(let i = 0; i <= hashedKey;i++){
-      console.log(i);
-    //   if (this.storage[i] === key) return this.storage[i].head.data;
-    //   else return 'The Item Does Not Exist';
+    for(let i = 0; i <= this.storage.length;i++){
+      if (this.storage[i] && this.storage[i].head.data.key === key) return this.storage[i].head.data.value;
     }
+    return 'Item Does Not Exist';
+  }
+  contain(key){
+    for(let i = 0; i <= this.storage.length;i++){
+      if (this.storage[i] && this.storage[i].head.data.key === key) return true;
+    }
+    return null;
   }
 }
-let hashmap = new Hashmap(1024);
 
-hashmap.add('name', 'ahmad');
-hashmap.add('listen', true);
-hashmap.add('silent', 'ayman'); // This will cause a collision
-hashmap.add('abu aseel', 0);
+module.exports = HashMap;
+
+// let hashMap = new HashMap(1024);
+
+// hashMap.add('name', 'ahmad');
+// hashMap.add('listen', true);
+// hashMap.add('silent', 'ayman'); // This will cause a collision
+// hashMap.add('abu aseel', 0);
 
 
-hashmap.storage.forEach((item, i)=>{
-  console.log(item, i);
-});
-// console.log(hashmap.get('ayman'));
+// hashMap.storage.forEach((item, i)=>{
+//   console.log(item, i);
+// });
+// console.log(hashMap.storage[157].head);
+
+// console.log(hashMap.contain('silent'));
 
