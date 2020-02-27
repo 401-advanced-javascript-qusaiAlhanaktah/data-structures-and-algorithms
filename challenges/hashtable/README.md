@@ -31,4 +31,8 @@ time is a big O(1), because there is no ant type loop to check for each element 
    space O (1)
 time is a big O(1), because there is no ant type loop to check for each element in the array.
 ## Solution
-- [whiteboard image]()
+- [whiteboard image](assets/hashtable.jpg)
+
+## Worked as a pair
+ - Qusai A. Al-Hanaktah
+ - Ahmad K. Al-Mahasneh 
