@@ -59,19 +59,3 @@ class HashMap {
 }
 
 module.exports = HashMap;
-
-// let hashMap = new HashMap(1024);
-
-// hashMap.add('name', 'ahmad');
-// hashMap.add('listen', true);
-// hashMap.add('silent', 'ayman'); // This will cause a collision
-// hashMap.add('abu aseel', 0);
-
-
-// hashMap.storage.forEach((item, i)=>{
-//   console.log(item, i);
-// });
-// console.log(hashMap.storage[157].head);
-
-// console.log(hashMap.contain('silent'));
-
