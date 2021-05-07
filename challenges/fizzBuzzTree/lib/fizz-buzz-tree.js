@@ -12,7 +12,6 @@ function FizzBuzzTree (tree){
     if (node.right) _trace(node.right);
   };
   _trace(tree.root);
-  console.log(tree.root);
   return tree;
 }
 
